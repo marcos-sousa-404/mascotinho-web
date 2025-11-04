@@ -1,11 +1,12 @@
 import React from "react";
-import {Header} from "../components";
+import {Header, Banner} from "../components";
 
 class Landing extends React.Component {
   render() {
     return (
       <>
         <Header/>
+        <Banner/>
       </>
     );
   }

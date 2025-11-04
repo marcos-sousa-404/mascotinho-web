@@ -3,8 +3,9 @@ import { palette } from "../../theme";
 
 export const ButtonContainer = styled.button`
   display: flex;
-  height: 50px;
-  min-width: 200px;
+  height: 5rem;
+  min-width: 20rem;
+  gap: 0.5rem;
   ${({ outlined }) =>
     outlined
       ? `
@@ -22,8 +23,6 @@ export const ButtonContainer = styled.button`
     font-weight: 700;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
-    font-size: 16px;
+    border-radius: 2.5rem;
+    font-size: 1.6rem;
 `;
-
-export const Icon = styled.img``;
