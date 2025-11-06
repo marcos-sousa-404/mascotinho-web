@@ -4,7 +4,6 @@ import Button from "../Button";
 const Banner = () => {
   return <Container>
     <SubContainer>
-      
     <Title>
       Onde o abandono
 termina e o amor

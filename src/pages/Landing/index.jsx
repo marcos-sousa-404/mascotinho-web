@@ -1,5 +1,6 @@
 import React from "react";
-import {Header, Banner} from "../components";
+import {Header, Banner} from "../../components";
+import {OurStory} from "./components"
 
 class Landing extends React.Component {
   render() {
@@ -7,6 +8,7 @@ class Landing extends React.Component {
       <>
         <Header/>
         <Banner/>
+        <OurStory/>
       </>
     );
   }

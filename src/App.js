@@ -1,7 +1,7 @@
 
 import React from "react";
 import { hot } from 'react-hot-loader/root';
-import Landing from "./pages/Landing.jsx";
+import Landing from "./pages/Landing";
 
 const App = () => {
   return <Landing/>;

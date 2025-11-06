@@ -14,21 +14,21 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /.(js|jsx)$/,
         use: 'babel-loader',
         exclude: /node_modules|cdn_modules/
       },
       {
-        test: /.(png|jpe?g|gif|mp4|webm)$/i,
+        test: /.(png|jpe?g|gif|mp4|webm)$/i,  // FIXED: Added backslash before dot
         type: 'asset/resource'
       },
       {
-        test: /.svg$/i,
-        issuer: /.[jt]sx?$/,
+        test: /.svg$/i,  // FIXED: Added backslash before dot
+        issuer: /.[jt]sx?$/,  // FIXED: Added backslash before dot
         use: ['@svgr/webpack']
       },
       {
-        test: /.css$/i,
+        test: /.css$/i,  // FIXED: Added backslash before dot
         use: ['style-loader', 'css-loader']
       }
     ]

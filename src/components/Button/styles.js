@@ -25,4 +25,10 @@ export const ButtonContainer = styled.button`
     justify-content: center;
     border-radius: 2.5rem;
     font-size: 1.6rem;
+    
+    transition: all 0.2s;
+    &:hover, &:active {
+      filter: brightness(1.3);
+      transform: scale(1.02);
+    }
 `;
