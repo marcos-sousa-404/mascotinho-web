@@ -1,21 +1,21 @@
-import React from "react";
-import {Header, Banner, Footer} from "../../components";
-import {OurStory, ContainedBanner} from "./components"
-import HowYouCanHelp from "./components/HowYouCanHelp";
+import React from 'react';
+import { Banner, Footer, Header } from '../../components';
+import { ContainedBanner, HowYouCanHelp, OurStory } from './components';
+import { MainContainer } from './styles';
 
-class Landing extends React.Component {
-  render() {
-    return (
-      <>
-        <Header/>
-        <Banner/>
-        <OurStory/>
-        <HowYouCanHelp/>
-        <ContainedBanner/>
-        <Footer/>
-      </>
-    );
-  }
-}
+const Landing = () => {
+  return (
+    <>
+      <Header />
+      <Banner />
+      <MainContainer>
+        <OurStory />
+        <HowYouCanHelp />
+        <ContainedBanner />
+      </MainContainer>
+      <Footer />
+    </>
+  );
+};
 
 export default Landing;

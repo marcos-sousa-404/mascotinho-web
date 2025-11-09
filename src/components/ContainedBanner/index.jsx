@@ -1,19 +1,16 @@
-import { Container, Description, CenterContainer, Title } from "./styles.js";
-import Button from "../Button";
-import {bor} from "../../theme";
+import { CenterContainer, Container, Description, Title } from './styles.js';
+import Button from '../Button';
 
-const ContainedBanner = ({imageUrl, className, title, description, cta}) => {
-  return (<Container imageUrl={imageUrl} className={className}>
-        <CenterContainer>
-            <Title>
-                {title}
-            </Title>
-            <Description>{description}</Description>
-            {cta && (<Button type={"white"}>
-                {cta}
-            </Button>)}
-        </CenterContainer>
-    </Container>)
-}
+const ContainedBanner = ({ imageUrl, className, title, description, cta }) => {
+  return (
+    <Container imageUrl={imageUrl} className={className}>
+      <CenterContainer>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+        {cta && <Button type={'white'}>{cta}</Button>}
+      </CenterContainer>
+    </Container>
+  );
+};
 
 export default ContainedBanner;
