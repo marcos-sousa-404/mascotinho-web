@@ -25,7 +25,7 @@ export const Description = styled.p`
 `
 
 export const LeftContainer = styled.div`
-    color: white;
+    color: ${palette.textLight};
     max-width: 50%;
     display: flex;
     flex-direction: column;

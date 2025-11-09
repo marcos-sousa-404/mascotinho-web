@@ -9,7 +9,7 @@ const Header = () => {
             <HeaderContainer>
                 <Logo onClick={() => document.documentElement.requestFullscreen()}/>
                 <ButtonsContainer>
-                    <Button Icon={WhatsappIcon} outlined>
+                    <Button Icon={WhatsappIcon} type="outlined">
                         Fale conosco
                     </Button>
                     <Button>

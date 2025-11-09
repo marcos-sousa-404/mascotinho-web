@@ -1,6 +1,6 @@
 import React from "react";
-import {Header, Banner} from "../../components";
-import {OurStory} from "./components"
+import {Header, Banner, Footer} from "../../components";
+import {OurStory, ContainedBanner} from "./components"
 import HowYouCanHelp from "./components/HowYouCanHelp";
 
 class Landing extends React.Component {
@@ -10,7 +10,9 @@ class Landing extends React.Component {
         <Header/>
         <Banner/>
         <OurStory/>
-          <HowYouCanHelp/>
+        <HowYouCanHelp/>
+        <ContainedBanner/>
+        <Footer/>
       </>
     );
   }

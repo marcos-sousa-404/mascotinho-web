@@ -3,3 +3,5 @@ export {default as Button} from "./Button";
 export {default as Banner} from "./Banner";
 export {default as UnderlinedTitle} from "./UnderlinedTitle";
 export {default as IconCardWithButton} from "./IconCardWithButton";
+export {default as ContainedBanner} from "./ContainedBanner";
+export {default as Footer} from "./Footer";

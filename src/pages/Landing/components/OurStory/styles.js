@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {fontSize, margin, padding, shadow} from "../../../../theme";
+import {fontSize, margin, padding, shadow, borderRadius} from "../../../../theme";
 
 export const SectionContainer = styled.section`
     padding: 0 ${padding.xl};
@@ -18,7 +18,7 @@ export const StoryItem = styled.div`
 `;
 
 export const StoryItemImage = styled.img`
-    border-radius: 3rem;
+    border-radius: ${borderRadius.lg};
     box-shadow: ${shadow.md};
     height: 90%;
     margin: 0 auto;

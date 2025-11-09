@@ -1,11 +1,11 @@
-import {ButtonContainer} from "./styles.js";
+import {Container} from "./styles.js";
 
-const Button = ({children, outlined, Icon, className}) => {
+const Button = ({children, type, Icon, className}) => {
     return (
-        <ButtonContainer className={className} outlined={outlined}>
+        <Container className={className} type={type}>
             {Icon && (<Icon/>)}
             {children}
-        </ButtonContainer>
+        </Container>
     );
 }
 

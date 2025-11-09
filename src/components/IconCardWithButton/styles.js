@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {fontSize, margin, padding, shadow, } from "../../theme";
+import {fontSize, margin, padding, shadow, borderRadius} from "../../theme";
 import ButtonBase from "../Button";
 
 export const Card = styled.div`
@@ -11,7 +11,7 @@ export const Card = styled.div`
     flex-direction: column;
     align-items: center;
     gap: ${margin.md};
-    border-radius: 2rem;
+    border-radius: ${borderRadius.lg};
 `;
 
 export const Title = styled.h3`
@@ -20,6 +20,7 @@ export const Title = styled.h3`
 
 export const Description = styled.p`
     font-size: ${fontSize.sm};
+    text-align: justify;
 `;
 
 export const Button = styled(ButtonBase)`
