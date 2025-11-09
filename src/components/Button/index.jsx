@@ -1,12 +1,12 @@
 import {ButtonContainer} from "./styles.js";
 
-const Button = ({ title, outlined, Icon }) => {
-  return (        
-    <ButtonContainer outlined={outlined}>
-      {Icon && (<Icon />)}
-      {title}
-      </ButtonContainer>
-  );
+const Button = ({children, outlined, Icon, className}) => {
+    return (
+        <ButtonContainer className={className} outlined={outlined}>
+            {Icon && (<Icon/>)}
+            {children}
+        </ButtonContainer>
+    );
 }
-  
+
 export default Button;

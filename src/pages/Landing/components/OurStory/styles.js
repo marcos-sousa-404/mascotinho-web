@@ -1,24 +1,34 @@
 import styled from "styled-components";
+import {fontSize, margin, padding, shadow} from "../../../../theme";
+
+export const SectionContainer = styled.section`
+    padding: 0 ${padding.xl};
+`
 
 export const StoryItem = styled.div`
-  font-size: 2rem;
-  height: 50vh;
-  display: flex;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: ${margin.xl};
+    
+    ${({reverse}) => {
+        return `flex-direction: ${reverse ? "row-reverse" : "row"};`
+    }}
 `;
 
-export const StoryItemImageContainer = styled.img``;
+export const StoryItemImage = styled.img`
+    border-radius: 3rem;
+    box-shadow: ${shadow.md};
+    height: 90%;
+    margin: 0 auto;
+`;
 
 export const StoryItemTextContainer = styled.div`
     width: 50%;
 `;
 
-export const UnderlinedTitle = styled.h2`
-  font-size: 2.5rem;
-  border-bottom: 2px solid black;
-  width: fit-content;
-  margin-bottom: 0.5rem;
+export const StoryItemDescription = styled.p`
+    font-size: ${fontSize.sm};
 `;
 
-export const StoryItemDescription = styled.p`
-  font-size: 1.5rem;  
-`;

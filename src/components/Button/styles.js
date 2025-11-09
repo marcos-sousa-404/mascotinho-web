@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { palette } from "../../theme";
+import {palette, shadow} from "../../theme";
 
 export const ButtonContainer = styled.button`
   display: flex;
@@ -18,7 +18,7 @@ export const ButtonContainer = styled.button`
     background-color: ${palette.primary};
     color: white;
 `}
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: ${shadow.sm};
     padding: 2px;
     font-weight: 700;
     align-items: center;
