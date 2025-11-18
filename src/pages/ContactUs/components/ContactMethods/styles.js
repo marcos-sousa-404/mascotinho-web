@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { breakpoints, margin, padding } from '../../../../theme';
-import { UnderlinedTitle as UnderlinedTitleBase } from '../../../../components';
 import IconCardWithButtonBase from '../../../../components/IconCardWithButton';
 
 export const SectionContainer = styled.section`
@@ -13,6 +12,7 @@ export const CardsContainer = styled.div`
   flex-wrap: wrap;
   gap: ${margin.lg};
   margin-top: ${margin.lg};
+  margin-bottom: ${margin.xl};
   justify-content: center;
 `;
 

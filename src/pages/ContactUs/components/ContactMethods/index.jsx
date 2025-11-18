@@ -1,4 +1,4 @@
-import { CardsContainer, SectionContainer, UnderlinedTitle, IconCardWithButton } from './styles';
+import { CardsContainer, SectionContainer, IconCardWithButton } from './styles';
 import InstagramIcon from '../../../../assets/icons/instagram.svg';
 import WhatsappIcon from '../../../../assets/icons/whatsapp-big.svg';
 import FacebookIcon from '../../../../assets/icons/facebook.svg';
