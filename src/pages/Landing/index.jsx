@@ -1,6 +1,6 @@
 import React from 'react';
-import { Banner, Footer, Header } from '../../components';
-import { ContainedBanner, HowYouCanHelp, OurStory } from './components';
+import { Footer, Header } from '../../components';
+import { ContainedBanner, HowYouCanHelp, OurStory, Banner } from './components';
 import { MainContainer } from './styles';
 
 const Landing = () => {

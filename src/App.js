@@ -1,9 +1,9 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import Landing from './pages/Landing';
+import ContactUs from './pages/ContactUs';
 
 const App = () => {
-  return <Landing />;
+  return <ContactUs />;
 };
 
 export default hot(App);

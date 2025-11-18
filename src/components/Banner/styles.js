@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import Hero from '../../assets/images/landing-hero.png';
 import { palette, fontSize, padding, margin, shadow, breakpoints } from '../../theme';
 
 export const Container = styled.section`
   height: 82.5vh;
   width: 100%;
   background:
-    linear-gradient(to top right, ${palette.primaryDark}77, ${palette.primaryDark}77), url(${Hero});
+    linear-gradient(to top right, ${palette.primaryDark}aa, ${palette.primaryDark}aa),
+    url(${({ imageUrl }) => imageUrl});
   background-size: cover;
   background-position: center;
   display: flex;

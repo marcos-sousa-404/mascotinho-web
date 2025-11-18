@@ -1,17 +1,15 @@
 import { Container, Description, LeftContainer, Title } from './styles.js';
 import Button from '../Button';
 
-const Banner = () => {
+const Banner = ({title, description, buttonText, imageUrl}) => {
   return (
-    <Container>
+    <Container imageUrl={imageUrl}>
       <LeftContainer>
-        <Title>Onde o abandono termina e o amor recomeça.</Title>
+        <Title>{title}</Title>
         <Description>
-          Resgatar é apenas o primeiro passo. Nosso trabalho diário envolve alimentar, medicar e
-          socializar centenas de cães para que eles estejam prontos para um novo começo. Seja o
-          pilar que sustenta essa missão.
+          {description}
         </Description>
-        <Button>Quero ajudar</Button>
+        {buttonText && (<Button>{buttonText}</Button>)}
       </LeftContainer>
     </Container>
   );

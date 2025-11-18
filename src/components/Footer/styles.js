@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { palette, shadow, padding, fontSize } from '../../theme';
+import { palette, padding, fontSize } from '../../theme';
 
 export const Container = styled.div`
   width: 100%;
