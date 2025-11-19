@@ -1,9 +1,9 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import Donate from './pages/Donate';
+import Router from './router';
 
 const App = () => {
-  return <Donate />;
+  return <Router />;
 };
 
 export default hot(App);
