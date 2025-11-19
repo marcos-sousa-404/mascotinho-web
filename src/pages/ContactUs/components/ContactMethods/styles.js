@@ -4,15 +4,13 @@ import IconCardWithButtonBase from '../../../../components/IconCardWithButton';
 
 export const SectionContainer = styled.section`
   padding: 0 ${padding.xl};
-  padding-top: ${padding.xl};
 `;
 
 export const CardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: ${margin.lg};
-  margin-top: ${margin.lg};
-  margin-bottom: ${margin.xl};
+  margin: ${margin.xxxl} 0;
   justify-content: center;
 `;
 

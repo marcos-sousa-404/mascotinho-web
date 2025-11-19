@@ -1,9 +1,9 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import ContactUs from './pages/ContactUs';
+import Donate from './pages/Donate';
 
 const App = () => {
-  return <ContactUs />;
+  return <Donate />;
 };
 
 export default hot(App);

@@ -1,7 +1,17 @@
+import { Footer, Header } from '../../components';
+import { ContainedBanner, OtherDonationMethods, PixSection } from './components';
+import FooterBanner from './components/FooterBanner';
+
+
 const Donate = () => {
-return (<>
-<h1>Donate</h1>
-</>)
-}
+  return (<>
+    <Header />
+    <ContainedBanner />
+    <PixSection />
+    <OtherDonationMethods />
+    <FooterBanner />
+    <Footer />
+  </>);
+};
 
 export default Donate;
