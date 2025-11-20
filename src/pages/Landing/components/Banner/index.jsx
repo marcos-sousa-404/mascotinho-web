@@ -10,6 +10,7 @@ const Banner = () => {
           pilar que sustenta essa missão."
       buttonText={'Quero ajudar'}
       imageUrl={Hero}
+      href={'#how-you-can-help'}
     />
   );
 };

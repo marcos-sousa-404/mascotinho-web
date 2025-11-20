@@ -1,8 +1,17 @@
 import { Container } from './styles.js';
 
 const Button = ({ children, type, Icon, className, href }) => {
-  const handleClick = () => {
-    if (href) document.location.href = href;
+  const handleClick = (event) => {
+    if (href && href.startsWith('#')) {
+      event.preventDefault();
+      const id = href.slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else if (href) {
+      document.location.href = href;
+    }
   };
 
   return (

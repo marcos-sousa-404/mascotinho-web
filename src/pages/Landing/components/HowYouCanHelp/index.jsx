@@ -5,7 +5,7 @@ import FollowUsIcon from '../../../../assets/icons/follow-us.svg';
 
 const HowYouCanHelp = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id={'how-you-can-help'}>
       <UnderlinedTitle>Como você pode ajudar</UnderlinedTitle>
       <CardsContainer>
         <IconCardWithButton
