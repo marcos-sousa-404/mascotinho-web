@@ -24,12 +24,12 @@ const config = {
         type: 'asset/resource'
       },
       {
-        test: /.svg$/i,  // FIXED: Added backslash before dot
-        issuer: /.[jt]sx?$/,  // FIXED: Added backslash before dot
+        test: /.svg$/i,
+        issuer: /.[jt]sx?$/,
         use: ['@svgr/webpack']
       },
       {
-        test: /.css$/i,  // FIXED: Added backslash before dot
+        test: /.css$/i,
         use: ['style-loader', 'css-loader']
       }
     ]
