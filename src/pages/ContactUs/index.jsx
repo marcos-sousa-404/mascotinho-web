@@ -5,9 +5,9 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      <Banner/>
-      <ContactMethods/>
-      <Footer/>
+      <Banner />
+      <ContactMethods />
+      <Footer />
     </>
   );
 };

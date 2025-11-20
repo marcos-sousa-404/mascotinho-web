@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: ${padding.md};
   color: ${palette.textLight};
   text-align: center;
-  color: ${palette.textSecondary};
+  color: ${palette.textTertiary};
 `;
 
 export const Title = styled.h5`

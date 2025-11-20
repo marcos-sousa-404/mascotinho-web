@@ -14,6 +14,7 @@ export const Container = styled.section`
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding: ${padding.xl};
   box-shadow: ${shadow.lg};
@@ -22,17 +23,19 @@ export const Container = styled.section`
 `;
 
 export const Title = styled(UnderlinedTitle)`
-    margin: 0 auto;
-    font-size: ${fontSize.xl};
-    line-height: 1;
-    ${({ onlyTitle }) => onlyTitle && `
+  margin: 0 auto;
+  font-size: ${fontSize.xl};
+  line-height: 1;
+  ${({ onlyTitle }) =>
+    onlyTitle &&
+    `
     font-size: ${fontSize.xxxl};
     border-bottom: none;
     `};
 
-    @media (max-width: ${breakpoints.sm}) {
-        font-size: ${fontSize.lg};
-    }
+  @media (max-width: ${breakpoints.sm}) {
+    font-size: ${fontSize.lg};
+  }
 `;
 
 export const Description = styled.p`
@@ -50,7 +53,7 @@ export const CenterContainer = styled.div`
   flex-direction: column;
   gap: ${margin.md};
   align-items: center;
-    ${({onlyTitle}) => onlyTitle && `margin: auto 0;`}
+  ${({ onlyTitle }) => onlyTitle && `margin: auto 0;`}
 
   @media (max-width: ${breakpoints.lg}) {
     max-width: 75%;

@@ -1,2 +1,2 @@
-export {default as Banner} from "./Banner";
-export {default as ContactMethods} from "./ContactMethods";
+export { default as Banner } from './Banner';
+export { default as ContactMethods } from './ContactMethods';

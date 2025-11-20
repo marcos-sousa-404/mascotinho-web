@@ -14,6 +14,7 @@ const ContactMethods = () => {
             'Acompanhe nosso dia a dia e nossos resgates. Siga no Instagram e ajude a divulgar nossos peludos e o trabalho do abrigo para mais pessoas.'
           }
           cta={'Seguir'}
+          href={'https://www.instagram.com/abrigo_mascotinho'}
         />
         <IconCardWithButton
           Icon={WhatsappIcon}
@@ -21,7 +22,8 @@ const ContactMethods = () => {
           description={
             'Fale com a gente pelo WhatsApp! Tire dúvidas sobre doações ou adoções e receba um atendimento  acolhedor, direto com nosso time do abrigo.'
           }
-          cta={'Seguir'}
+          cta={'Conversar'}
+          href={'https://wa.me/5585981727044?text=Oi'}
         />
         <IconCardWithButton
           Icon={FacebookIcon}
@@ -30,6 +32,7 @@ const ContactMethods = () => {
             'Veja notícias, campanhas de arrecadação e acompanhe todas as conquistas do abrigo! Curta e compartilhe nossa página no Facebook para fazer parte dessa rede do bem.'
           }
           cta={'Seguir'}
+          href={'https://www.facebook.com/abrigomascotinhocascavel?locale=pt_BR'}
         />
       </CardsContainer>
     </SectionContainer>

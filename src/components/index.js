@@ -5,3 +5,8 @@ export { default as UnderlinedTitle } from './UnderlinedTitle';
 export { default as IconCardWithButton } from './IconCardWithButton';
 export { default as ContainedBanner } from './ContainedBanner';
 export { default as Footer } from './Footer';
+export { default as Subtitle } from './Subtitle';
+export { default as Card } from './Card';
+export { default as Input } from './Input';
+export { default as InputLabel } from './InputLabel';
+export { default as InputGroup } from './InputGroup';

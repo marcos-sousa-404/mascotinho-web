@@ -1,17 +1,13 @@
 import styled from 'styled-components';
 import { fontSize, margin, padding, shadow, borderRadius, breakpoints } from '../../theme';
 import ButtonBase from '../Button';
+import CardBase from '../Card';
 
-export const Card = styled.div`
-  width: 100%;
-  background-color: white;
-  box-shadow: ${shadow.md};
-  padding: ${padding.md};
+export const Card = styled(CardBase)`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: ${margin.md};
-  border-radius: ${borderRadius.lg};
 `;
 
 export const Title = styled.h3`

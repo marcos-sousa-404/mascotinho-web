@@ -3,7 +3,7 @@ import { palette, shadow, borderRadius, breakpoints } from '../../theme';
 
 export const Container = styled.button`
   display: flex;
-  height: 5rem;
+  height: 4.5rem;
   min-width: 20rem;
   gap: 0.5rem;
   ${({ type }) => getTypeDependentStyling(type)}
@@ -25,7 +25,7 @@ export const Container = styled.button`
   }
 
   @media (max-width: ${breakpoints.lg}) {
-    height: 4.5rem;
+    height: 4rem;
   }
 `;
 

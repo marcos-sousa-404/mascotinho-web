@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { fontSize } from '../../theme';
+import { UnderlinedTitle as UnderlinedTitleBase } from './styles';
 
-const UnderlinedTitle = styled.h2`
-  font-size: ${fontSize.lg};
-  border-bottom: 2px solid currentColor;
-  width: fit-content;
-  margin-bottom: 0.5rem;
-`;
+const UnderlinedTitle = ({ className, children, align = 'left' }) => {
+  return (
+    <UnderlinedTitleBase align={align} className={className}>
+      {children}
+    </UnderlinedTitleBase>
+  );
+};
 
 export default UnderlinedTitle;

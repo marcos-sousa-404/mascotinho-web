@@ -1,7 +1,15 @@
+import { Footer, Header } from '../../components';
+import { AdoptForm, ContainedBanner } from './components';
+
 const Adopt = () => {
-  return (<>
-    <h1>Adopt</h1>
-  </>);
+  return (
+    <>
+      <Header />
+      <ContainedBanner />
+      <AdoptForm />
+      <Footer />
+    </>
+  );
 };
 
 export default Adopt;

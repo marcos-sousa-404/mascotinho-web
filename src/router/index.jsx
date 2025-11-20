@@ -6,12 +6,7 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       {routes.map(({ path, Component, exact }) => (
-        <Route
-          key={path}
-          path={path}
-          exact={exact}
-          component={Component}
-        />
+        <Route key={path} path={path} exact={exact} component={Component} />
       ))}
     </Switch>
   </BrowserRouter>

@@ -5,7 +5,7 @@ export const Container = styled.section`
   height: 82.5vh;
   width: 100%;
   background:
-    linear-gradient(to top right, ${palette.primaryDark}aa, ${palette.primaryDark}aa),
+    linear-gradient(to top right, ${palette.primaryDark}66, ${palette.primaryDark}66),
     url(${({ imageUrl }) => imageUrl});
   background-size: cover;
   background-position: center;

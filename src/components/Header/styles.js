@@ -23,4 +23,5 @@ export const ButtonsContainer = styled.div`
 
 export const Logo = styled(LogoBase)`
   height: 7rem;
+  cursor: pointer;
 `;

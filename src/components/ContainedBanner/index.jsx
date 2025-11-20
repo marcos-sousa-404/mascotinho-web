@@ -1,7 +1,7 @@
 import { CenterContainer, Container, Description, Title } from './styles.js';
 import Button from '../Button';
 
-const ContainedBanner = ({ imageUrl, className, title, description, cta }) => {
+const ContainedBanner = ({ imageUrl, className, title, description, cta, href }) => {
   const onlyTitle = !description && !cta && title;
 
   return (
@@ -9,7 +9,11 @@ const ContainedBanner = ({ imageUrl, className, title, description, cta }) => {
       <CenterContainer onlyTitle={onlyTitle}>
         <Title onlyTitle={onlyTitle}>{title}</Title>
         <Description>{description}</Description>
-        {cta && <Button type={'white'}>{cta}</Button>}
+        {cta && (
+          <Button href={href} type={'white'}>
+            {cta}
+          </Button>
+        )}
       </CenterContainer>
     </Container>
   );

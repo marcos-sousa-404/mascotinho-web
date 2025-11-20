@@ -3,6 +3,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+    background-color: #fcfcfc;
+
+    ::selection {
+        background-color: #ff7a2f; {/* Comes from primaryLight */}
+        color: white;
+    }
 }
 
 body,
