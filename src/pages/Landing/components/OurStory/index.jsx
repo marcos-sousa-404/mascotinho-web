@@ -1,13 +1,23 @@
-import { SectionContainer, Item, Description, Image, TextContainer } from './styles';
-import StoryImageOne from '../../../../assets/images/story-1.png';
-import StoryImageTwo from '../../../../assets/images/story-2.png';
+import { Description, Image, Item, SectionContainer, TextContainer } from './styles';
+import StoryImageOneSm from '../../../../assets/images/story-1/story-1-sm.png';
+import StoryImageTwoSm from '../../../../assets/images/story-2/story-2-sm.png';
+import StoryImageTwoMd from '../../../../assets/images/story-2/story-2-md.png';
+import StoryImageTwoLg from '../../../../assets/images/story-2/story-2-lg.png';
 import { UnderlinedTitle } from '../../../../components';
+import getResponsiveImageUrl from '../../../../helpers/getResponsiveImageUrl';
 
 const OurStory = () => {
+  const responsiveStoryImage1Url = getResponsiveImageUrl({ sm: StoryImageOneSm });
+  const responsiveStoryImage2Url = getResponsiveImageUrl({
+    sm: StoryImageTwoSm,
+    md: StoryImageTwoMd,
+    lg: StoryImageTwoLg,
+  });
+
   return (
     <SectionContainer>
       <Item>
-        <Image src={StoryImageOne} />
+        <Image src={responsiveStoryImage1Url} />
         <TextContainer>
           <UnderlinedTitle>Nossa história</UnderlinedTitle>
           <Description>
@@ -21,7 +31,7 @@ const OurStory = () => {
         </TextContainer>
       </Item>
       <Item reverse>
-        <Image src={StoryImageTwo} />
+        <Image src={responsiveStoryImage2Url} />
         <TextContainer>
           <Description>
             Não recebemos nenhum tipo de ajuda do poder público. Tudo vem através de doações, da

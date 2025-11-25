@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Hero from '../../assets/images/landing-hero.png';
 import { palette, fontSize, padding, margin, shadow, borderRadius, breakpoints } from '../../theme';
 import UnderlinedTitle from '../UnderlinedTitle';
 

@@ -1,9 +1,12 @@
 import { Container, Description, LeftContainer, Title } from './styles.js';
 import Button from '../Button';
+import getResponsiveImageUrl from '../../helpers/getResponsiveImageUrl';
 
-const Banner = ({ title, description, buttonText, imageUrl, href }) => {
+const Banner = ({ title, description, buttonText, imageUrlMap, href }) => {
+  const responsiveImageUrl = getResponsiveImageUrl(imageUrlMap);
+
   return (
-    <Container imageUrl={imageUrl}>
+    <Container imageUrl={responsiveImageUrl}>
       <LeftContainer>
         <Title>{title}</Title>
         <Description>{description}</Description>

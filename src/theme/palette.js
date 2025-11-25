@@ -1,6 +1,6 @@
 const palette = {
   background: '#fff',
-  foreground: '#ddd',
+  foreground: '#eee',
   cardBackground: '#F9F9F9',
   cardBorder: '#D5D5D5',
   primary: '#FF5A00',

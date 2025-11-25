@@ -1,13 +1,16 @@
 import styled from 'styled-components';
-import Image from '../../../../assets/images/donate-footer.png';
+import ImageSm from '../../../../assets/images/donate-footer/donate-footer-sm.png';
+import ImageMd from '../../../../assets/images/donate-footer/donate-footer-md.png';
+import ImageLg from '../../../../assets/images/donate-footer/donate-footer-lg.png';
 import { fontSize, margin, padding, palette, borderRadius } from '../../../../theme';
 import { Subtitle as SubtitleBase } from '../../../../components';
+import getResponsiveImageUrl from '../../../../helpers/getResponsiveImageUrl';
 
 export const Container = styled.section`
   min-height: 36rem;
   background:
     linear-gradient(120deg, ${palette.primaryDark}A0 0%, ${palette.primaryDark}60 100%),
-    url(${Image});
+    url(${() => getResponsiveImageUrl({sm: ImageSm, md: ImageMd, lg: ImageLg})});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
