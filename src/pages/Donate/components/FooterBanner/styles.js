@@ -10,7 +10,7 @@ export const Container = styled.section`
   min-height: 36rem;
   background:
     linear-gradient(120deg, ${palette.primaryDark}A0 0%, ${palette.primaryDark}60 100%),
-    url(${() => getResponsiveImageUrl({sm: ImageSm, md: ImageMd, lg: ImageLg})});
+    url(${() => getResponsiveImageUrl({ sm: ImageSm, md: ImageMd, lg: ImageLg })});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

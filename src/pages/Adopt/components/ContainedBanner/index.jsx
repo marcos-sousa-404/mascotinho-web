@@ -10,7 +10,7 @@ const ContainedBanner = () => {
       description={
         'Adotar um pet é muito mais do que dar um lar: é transformar vidas com carinho, segurança e uma nova chance de felicidade. Venha fazer parte dessa história!'
       }
-      imageUrlMap={{sm: HeroSm, md: HeroMd, lg: HeroLg}}
+      imageUrlMap={{ sm: HeroSm, md: HeroMd, lg: HeroLg }}
     />
   );
 };

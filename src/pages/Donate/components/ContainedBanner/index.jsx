@@ -7,7 +7,7 @@ const ContainedBanner = () => {
   return (
     <BannerContainer>
       <ContainedBannerBase
-        imageUrlMap={{sm: HeroSm, md: HeroMd, lg: HeroLg}}
+        imageUrlMap={{ sm: HeroSm, md: HeroMd, lg: HeroLg }}
         title={'Seja um doador'}
         description={
           'Ajude nossos cães a terem uma vida melhor. Sua doação oferece comida, cuidados e abrigo para animais que precisam de um lar seguro. Contribua e faça parte deste gesto de amor.'

@@ -8,7 +8,7 @@ const Banner = () => {
     <BannerBase
       title="Entre em Contato"
       description="Os animais precisam da nossa voz! Ajude a transformar a vida de muitos bichinhos que hoje esperam por cuidado, carinho e um lar. Cada gesto de apoio faz a diferença — seja compartilhando, doando ou adotando. Juntos podemos dar a eles o amor que merecem!"
-      imageUrlMap={{sm: HeroSm, md: HeroMd, lg: HeroLg}}
+      imageUrlMap={{ sm: HeroSm, md: HeroMd, lg: HeroLg }}
     />
   );
 };
