@@ -6,12 +6,8 @@ const IconCardWithButton = ({ Icon, title, cta, description, className, href }) 
   const StyledIcon =
     Icon &&
     styled(Icon)`
-      width: 10rem;
-      height: 10rem;
-
-      @media (max-width: ${breakpoints.sm}) {
-        width: 8rem;
-      }
+      width: 8rem;
+      height: 8rem;
     `;
 
   return (

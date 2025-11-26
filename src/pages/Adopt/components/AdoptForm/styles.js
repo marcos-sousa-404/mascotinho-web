@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Card as CardBase, Button as ButtonBase } from '../../../../components';
-import { margin } from '../../../../theme';
+import { breakpoints, margin } from '../../../../theme';
 
 export const MainContainer = styled.section`
   display: flex;
@@ -14,13 +14,24 @@ export const Card = styled(CardBase)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   margin-bottom: ${margin.xxxl};
+
+  @media (max-width: ${breakpoints.md}) {
+    width: 80%;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    width: 100%;
+  }
 `;
 
 export const FieldsContainer = styled.div`
   align-self: start;
   width: 100%;
+
+  & > :first-child {
+    margin-top: ${margin.sm};
+  }
 
   & > :not(:last-child) {
     margin-bottom: ${margin.sm};

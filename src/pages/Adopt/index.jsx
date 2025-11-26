@@ -1,12 +1,15 @@
 import { Footer, Header } from '../../components';
 import { AdoptForm, ContainedBanner } from './components';
+import { MainContainer } from './styles';
 
 const Adopt = () => {
   return (
     <>
       <Header />
-      <ContainedBanner />
-      <AdoptForm />
+      <MainContainer>
+        <ContainedBanner />
+        <AdoptForm />
+      </MainContainer>
       <Footer />
     </>
   );

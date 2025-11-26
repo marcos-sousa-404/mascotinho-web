@@ -1,13 +1,16 @@
 import { Footer, Header } from '../../components';
-import { ContainedBanner, OtherDonationMethods, PixSection } from './components';
+import { ContainedBanner, PixSection } from './components';
 import FooterBanner from './components/FooterBanner';
+import { MainContainer } from './styles';
 
 const Donate = () => {
   return (
     <>
       <Header />
-      <ContainedBanner />
-      <PixSection />
+      <MainContainer>
+        <ContainedBanner />
+        <PixSection />
+      </MainContainer>
       <FooterBanner />
       <Footer />
     </>

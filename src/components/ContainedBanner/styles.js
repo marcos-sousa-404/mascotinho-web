@@ -25,6 +25,8 @@ export const Title = styled(UnderlinedTitle)`
   margin: 0 auto;
   font-size: ${fontSize.xl};
   line-height: 1;
+  text-align: center;
+  white-space: nowrap;
   ${({ onlyTitle }) =>
     onlyTitle &&
     `
@@ -56,5 +58,9 @@ export const CenterContainer = styled.div`
 
   @media (max-width: ${breakpoints.lg}) {
     max-width: 75%;
+  }
+
+  @media (max-width: ${breakpoints.md}) {
+    max-width: 90%;
   }
 `;

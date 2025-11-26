@@ -1,4 +1,5 @@
-import { MainContainer, UnderlinedTitle, CardsContainer } from './styles';
+import { MainContainer, CardsContainer } from './styles';
+import { UnderlinedTitle } from '../../../../components';
 import { PixKeyCard } from '../index';
 import { Subtitle } from '../../../../components';
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontSize } from '../../theme';
+import { breakpoints, fontSize } from '../../theme';
 
 export const UnderlinedTitle = styled.h2`
   font-size: ${fontSize.lg};
