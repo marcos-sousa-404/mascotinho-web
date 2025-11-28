@@ -1,6 +1,6 @@
 import { Container } from './styles.js';
 
-const Button = ({ children, type, Icon, className, href }) => {
+const Button = ({ children, type, Icon, className, href, iconSize = 28 }) => {
   const handleClick = (event) => {
     if (href && href.startsWith('#')) {
       event.preventDefault();
@@ -16,7 +16,7 @@ const Button = ({ children, type, Icon, className, href }) => {
 
   return (
     <Container onClick={handleClick} className={className} type={type}>
-      {Icon && <Icon />}
+      {Icon && <Icon width={iconSize} height={iconSize} />}
       {children}
     </Container>
   );

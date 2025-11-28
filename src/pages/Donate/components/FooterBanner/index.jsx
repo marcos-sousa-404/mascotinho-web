@@ -22,6 +22,7 @@ const FooterBanner = () => {
         <SecondaryTitle>Outras formas de doar</SecondaryTitle>
         <ButtonsContainer>
           <Button
+            iconSize={24}
             href={
               'https://www.vakinha.com.br/vaquinha/vamos-construir-a-sede-propria-do-abrigo-mascotinho'
             }
