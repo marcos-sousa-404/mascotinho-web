@@ -110,16 +110,6 @@ export const MobileMenuButton = styled.button`
   }
 `;
 
-export const DrawerFooter = styled.footer`
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-
-  & button {
-    width: 100%;
-  }
-`;
-
 export const Backdrop = styled.div`
   position: fixed;
   inset: 0;

@@ -3,7 +3,6 @@ import {
   Backdrop,
   ButtonsContainer,
   CloseIcon,
-  DrawerFooter,
   DrawerLink,
   GoBackIcon,
   HamburgerMenuIcon,
@@ -59,10 +58,6 @@ const Header = () => {
             <DrawerLink href="/adopt">Adote um amigo</DrawerLink>
             <DrawerLink href="/donate">Faça uma doação</DrawerLink>
             <DrawerLink href="/contact-us">Nos siga</DrawerLink>
-
-            <DrawerFooter>
-              <ContactUsOnWhatsappButton />
-            </DrawerFooter>
           </MobileDrawer>
         </>
       )}
