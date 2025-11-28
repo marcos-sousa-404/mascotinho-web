@@ -35,7 +35,7 @@ export const CardKey = styled.span`
   word-break: break-word;
 
   @media (max-width: ${breakpoints.sm}) {
-    font-size: ${fontSize.md};
+    font-size: 1.8rem;
   }
 `;
 
